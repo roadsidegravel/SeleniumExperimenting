@@ -1,0 +1,23 @@
+https://www.guru99.com/first-webdriver-script.html
+@ waits +- 3/4de
+
+https://www.guru99.com/live-selenium-project.html
+oeeeh
+
+https://www.guru99.com/selenium-tutorial.html
+
+https://www.guru99.com/introduction-selenuim-ide.html
+de IDE kan gebruikt worden om tests te prototypen enzo
+dan de tests exporten naar bv .java
+
+Firefox of chrome addon
+https://addons.mozilla.org/en-US/firefox/addon/selenium-ide/
+
+!!!!!
+In Selenium IDE above, the entire test passed. However in the Selenium
+ WebDriver script below, the same test generated an error because
+ WebDriver does not support the "contains" keyword when used in the
+  By.cssSelector() method.
+
+webDriver.close() closes current browser window
+webDriver.quit() closes all webDriver windows

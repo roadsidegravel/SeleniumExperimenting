@@ -1,3 +1,7 @@
+
+https://web-platform-tests.org/
+https://web-platform-tests.org/writing-tests/making-a-testing-plan.html
+
 https://www.selenium.dev/documentation/en/getting_started_with_webdriver/browsers/
 
 Later de executables in een PATH zetten, nu voorlopig in een folder
@@ -8,3 +12,28 @@ https://sites.google.com/chromium.org/driver/getting-started
 https://sites.google.com/chromium.org/driver/capabilities
 
 https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+
+https://www.selenium.dev/selenium/docs/api/py/api.html
+
+https://www.selenium.dev/documentation/en/getting_started_with_webdriver/browsers/
+https://www.selenium.dev/documentation/en/webdriver/
+
+https://firefox-source-docs.mozilla.org/testing/geckodriver/index.html
+
+https://w3c.github.io/webdriver/
+
+https://www.lambdatest.com/blog/automation-testing-with-selenium-javascript/
+en van zelfde site:
+Page Object Model (POM) is a design pattern popularly used in Selenium
+web automation. Here we will be creating an object repository for
+storing all web elements. A Page Class is created for each web page.
+Every Page class contains details of the particular page Web elements
+and Page Methods that perform tasks on those web elements.
+Parallel testing in Selenium lets you run multiple tests simultaneously
+in different environments.
+LambdaTest is a trusted cross browser testing platform that provides
+you access to 2000+ browsers and operating systems online. The Selenium
+automation tests are executed on a secure cloud-based Selenium Grid.
+allows you to execute automated tests on a remote Selenium Grid.
+
+
