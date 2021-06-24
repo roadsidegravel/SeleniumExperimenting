@@ -1,5 +1,4 @@
-https://www.guru99.com/first-webdriver-script.html
-@ waits +- 3/4de
+https://www.guru99.com/locators-in-selenium-ide.html
 
 https://www.guru99.com/live-selenium-project.html
 oeeeh
@@ -19,5 +18,60 @@ In Selenium IDE above, the entire test passed. However in the Selenium
  WebDriver does not support the "contains" keyword when used in the
   By.cssSelector() method.
 
+##################################################################
+https://www.guru99.com/first-webdriver-script.html
+##################################################################
 webDriver.close() closes current browser window
 webDriver.quit() closes all webDriver windows
+
+Implicit wait - used to set the default waiting time throughout the
+program
+    import java.util.concurrent.TimeUnit;
+    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS)
+                        sets default wait (timeout) to 10 seconds
+Explicit wait - used to set the waiting time for a particular instance
+ only
+    import org.openqa.selenium.support.ui.ExpectedConditions;
+    import org.openqa.selenium.support.ui.WebDriverWait;
+    WebDriver driver = new FirefoxDriver();
+    WebDriverWait myWaitVar = new WebDriverWait(driver, 10);
+ Now when we want to wait, we can do stuff like this:
+    myWaitVar.until(ExpectedConditions.visibilityOfElementLocated(By.id("username")));
+    driver.findElement(By.id("username")).sendKeys("tutorial");
+ here we wait till the element is visible, then type text into it
+
+These three will throw a NoSuchElementException if the element
+does not yet exist, wrap in try{}catch{} block
+ True/False
+ element.isEnabled()
+ element.isDisplayed()
+ element.isSelected() only for checkboxes, radio buttons or
+                        options in dropdown menus
+ example:
+ if (driver.findElement(By.id("one-way")).isSelected()){
+    driver.findElement(By.id("two-way")).click();
+ }
+
+Explicit Wait will throw TimeOutException, again, try catch
+
+ ExpectedConditions.alertIsPresent() is there an alert box displayed
+ example:
+ if (myWaitVar.until(ExpectedConditions.alertIsPresent() != null){
+    System.out.println("alert is present");
+ }
+ ExpectedConditions.elementToBeClickable() waits till visible AND enabled
+ example: wait till the element is visible and enabled, then store reference
+ WebElement txtUserName = myWaitVar.until(
+    ExpectedConditions.elementToBeClickable(By.id("username"));
+ ExpectedConditions.frameToBeAvailableAndSwitchToIt()
+ wait till specified frame is available,then switch to that frame
+
+ driver.get() goes to a specific site, but maintains no history or cookies
+ driver.navigate() does maintain history and cookies so forward and
+ backward button do work
+
+##################################################################
+https://www.guru99.com/locators-in-selenium-ide.html
+##################################################################
+
+
