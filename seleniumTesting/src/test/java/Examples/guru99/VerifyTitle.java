@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 //https://www.guru99.com/first-webdriver-script.html
 
-public class FirstWebDriverScript {
+public class VerifyTitle {
 
     public static void main(String[] args) {
         // declaration and instantiation of objects/variables

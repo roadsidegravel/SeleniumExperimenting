@@ -36,4 +36,19 @@ you access to 2000+ browsers and operating systems online. The Selenium
 automation tests are executed on a secure cloud-based Selenium Grid.
 allows you to execute automated tests on a remote Selenium Grid.
 
+Selenium Grid
+Selenium Grid is a tool used together with Selenium RC to run parallel
+tests across different machines and different browsers all at the same
+time. Parallel execution means running multiple tests at once.
+Features:
+    Enables simultaneous running of tests in multiple browsers and
+    environments.
+    Saves time enormously.
+    Utilizes the hub-and-nodes concept. The hub acts as a central
+    source of Selenium commands to each node connected to it.
+nadeel is dat het selenium RC (remote control) nodig heeft
+selenium RC is deprecated, kan grid dan met webdriver?
+
+
+
 

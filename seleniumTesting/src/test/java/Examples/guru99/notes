@@ -73,5 +73,26 @@ Explicit Wait will throw TimeOutException, again, try catch
 ##################################################################
 https://www.guru99.com/locators-in-selenium-ide.html
 ##################################################################
-
-
+test pages:
+http://demo.guru99.com/test/facebook.html
+http://demo.guru99.com/test/newtours/
+---------------------------------------------
+by name or id
+name=email
+id=email
+in browser, inspect
+shows you the id and the name
+https://www.guru99.com/locators-in-selenium-ide.html
+can use the Selenium IDE (the browser addon) to visually check
+you got the right one, enter 'id=email' in the target field
+and then that field is highlighted
+----------------------------------------------
+by name using filters
+for when multiple elements have the same name
+on newtours, both radio buttons have name="tripType"
+but their values are different "oneway" and "roundtrip"
+in browser addon: name=tripType value=roundtrip
+----------------------------------------------
+by link text
+CSS locator, only applies to hyperlink texts
+link=link_text
